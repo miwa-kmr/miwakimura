@@ -1,3 +1,7 @@
+$back:#4b6e8a;
+$orange:#e9a668;
+$first_color:#232423;
+$second_color:#3a413b;
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 body {
     margin: 0;
@@ -7,7 +11,7 @@ body {
 div#loading {
     width: 100vw;
     height: 100vh;
-    background: #4b6e8a;
+    background: $back;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -61,16 +65,16 @@ div#loading {
 
 @keyframes animate {
     0% {
-        color: #232423;
+        color: $first_color;
         text-shadow: none;
     }
     90% {
-        color: #3a413b;
+        color: $second_color;
         text-shadow: none;
     }
     100% {
-        color: #e9a668;
-        text-shadow: 0 0 7px #e9a668, 0 0 50px #e9a668;
+        color: $orange;
+        text-shadow: 0 0 7px $orange, 0 0 50px $orange;
     }
 }
 
